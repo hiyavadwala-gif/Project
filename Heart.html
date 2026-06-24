@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        /* CSS Heart */
+        .css-heart {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            transform: rotate(-45deg);
+            margin: 50px auto;
+        }
+
+        .css-heart::before,
+        .css-heart::after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .css-heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .css-heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        /* Animated Heart */
+        #beatHeart {
+            font-size: 80px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h2>Canvas Heart</h2>
+    <canvas id="heartCanvas" width="300" height="300"></canvas>
+    <h2>CSS-Heart</h2>
+    <div class="css-heart"></div>
+    <h2>Beating Heart</h2>
+    <div class="beatHeart"></div>
+
+    <script>
+        const canvas = document.getElementById("heartcanvas")
+        const ctx = canvas.getcontext("2d");
+
+        ctx.beginPath();
+        for (let t = 0; t < Math.PI * 2; t += 0.01) {
+let x = 16* Math.pow(Math.sin(t),3);
+let y = -(13 * math.cos(t)
+-5* Math.cos(2* t)
+-2* Math.cos(3*t)
+-Math.cos(4* t));
+
+x = x * 8+150;
+y = y* 8+150;
+
+if(t=== 0)
+ctx.moveTo(x,y);
+else
+ctx.lineTo(x,y);
+        }
+ctx.fillStyle ="red";
+ctx.fill();
+// Beating Heart 
+const heart= document.getElementById("beatHeart");
+setInterval(() => {
+    heart.style.transform =
+     heart.style.transform === "scale(1.3)"
+                    ? "scale(1)"
+                    : "scale(1.3)";
+        }, 500);
+
+</script>
+</body>
+
+</html>
