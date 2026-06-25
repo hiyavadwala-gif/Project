@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <h1>Students List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a name...">
+    <button onclick="addevent()">add</button>
+    <ul id="taskList"></ul>
+
+    <script>
+
+
+        // function add() {
+        //     const input = document.getElementById("taskInput");
+        //     const taskText = input.value.trim();
+
+        //     if (taskText === "")
+        //         alert("Enter task")
+        //     return;
+
+        // }
+        const list = document.getElementById("tasklist")
+        const input = document.getElementById("taskInput")
+        function addevent() {
+            const inputData = input.value.trim()
+            const li = document.createElement("li");
+            // let li = document.createElement("li");
+            li.textContent = inputData
+            list.appendChild(li);
+            input.value = ""
+            
+
+            // let span = document.createElement("span");
+            // span.textContent = input;
+        }
+        // li.innerHTML = taskList
+
+
+        // let delbtn = document.createElement("button")
+        //     delbtn.textContent = "Delete";
+        //     delbtn.className = "delete";
+
+
+
+        console.log("name")
+
+
+
+    </script>
+</body>
+
+</html>
