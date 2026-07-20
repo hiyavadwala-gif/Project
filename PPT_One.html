@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frameboxx Institute Overview - Cover</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        /* Custom Utilities for Neon Effects */
+        .neon-text-cyan {
+            color: #00f3ff;
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+        .neon-text-magenta {
+            color: #ff00ff;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Background Elements (Solid Colors + Blur/Opacity, No Gradients) -->
+<div class="absolute inset-0 bg-[#050505]"></div>
+<!-- Ambient Glow Effects -->
+<div class="absolute top-[-150px] right-[-100px] w-[600px] h-[600px] bg-[#00f3ff] rounded-full filter blur-[150px] opacity-10"></div>
+<div class="absolute bottom-[-150px] left-[-100px] w-[500px] h-[500px] bg-[#ff00ff] rounded-full filter blur-[120px] opacity-10"></div>
+<!-- Tech Grid Lines (CSS Borders) -->
+<div class="absolute top-0 right-1/4 w-px h-full bg-gray-800 opacity-50"></div>
+<div class="absolute top-2/3 left-0 w-full h-px bg-gray-800 opacity-50"></div>
+<div class="absolute top-10 right-10 w-20 h-20 border border-gray-800 opacity-50"></div>
+<div class="absolute bottom-10 left-10 w-4 h-4 bg-[#00f3ff] opacity-50"></div>
+<!-- Main Content Container -->
+<div class="z-10 flex flex-1 items-center px-24 w-full h-full">
+<!-- Left Side: Typography -->
+<div class="w-7/12 flex flex-col justify-center space-y-6 z-20">
+<!-- Brand Tagline -->
+<div class="flex items-center space-x-3 mb-2 animate-pulse">
+<span class="inline-block w-8 h-1 bg-[#ff00ff] shadow-[0_0_10px_#ff00ff]"></span>
+<p class="text-gray-400 tracking-[0.3em] text-sm uppercase font-medium font-['Inter']">Skilling For The Future</p>
+</div>
+<!-- Main Title -->
+<div class="relative">
+<h1 class="text-8xl font-bold font-['Space_Grotesk'] leading-[0.9] tracking-tight text-white mb-2">
+                        FRAME<br/><span class="text-transparent" style="-webkit-text-stroke: 2px #fff;">BOXX</span>
+</h1>
+<div class="flex items-center mt-4 space-x-4">
+<div class="h-px bg-white w-16 opacity-50"></div>
+<h2 class="text-4xl font-light font-['Space_Grotesk'] tracking-wide text-gray-100">
+                            INSTITUTE OVERVIEW
+                        </h2>
+</div>
+</div>
+<!-- Subtitle / Domains -->
+<div class="flex flex-wrap gap-3 mt-6">
+<div class="px-5 py-2 border border-[#00f3ff] bg-[#00f3ff] bg-opacity-10 backdrop-blur-sm">
+<p class="text-[#00f3ff] font-bold tracking-wider text-sm font-['Space_Grotesk'] shadow-[0_0_5px_rgba(0,243,255,0.2)]">ANIMATION</p>
+</div>
+<div class="px-5 py-2 border border-gray-700 bg-gray-900 bg-opacity-50">
+<p class="text-white font-medium tracking-wider text-sm font-['Space_Grotesk']">VFX</p>
+</div>
+<div class="px-5 py-2 border border-[#ff00ff] bg-[#ff00ff] bg-opacity-10 backdrop-blur-sm">
+<p class="text-[#ff00ff] font-bold tracking-wider text-sm font-['Space_Grotesk'] shadow-[0_0_5px_rgba(255,0,255,0.2)]">GAMING</p>
+</div>
+<div class="px-5 py-2 border border-gray-700 bg-gray-900 bg-opacity-50">
+<p class="text-white font-medium tracking-wider text-sm font-['Space_Grotesk']">DESIGN</p>
+</div>
+</div>
+<!-- Student Info Section -->
+<div class="mt-16 pt-6 border-t border-gray-800 w-10/12 flex justify-between items-end">
+<div class="flex flex-col">
+<p class="text-gray-500 text-[10px] uppercase tracking-widest mb-1 font-['Inter']">Presented By</p>
+<p class="text-lg font-medium text-white font-['Space_Grotesk']">{Student Name}</p>
+</div>
+<div class="flex flex-col">
+<p class="text-gray-500 text-[10px] uppercase tracking-widest mb-1 font-['Inter']">Date</p>
+<p class="text-lg font-medium text-white font-['Space_Grotesk']">February 24, 2026</p>
+</div>
+<div class="flex flex-col">
+<p class="text-gray-500 text-[10px] uppercase tracking-widest mb-1 font-['Inter']">Branch</p>
+<p class="text-lg font-medium text-white font-['Space_Grotesk']">{City/Branch Name}</p>
+</div>
+</div>
+</div>
+<!-- Right Side: Graphic Element -->
+<div class="w-5/12 h-full flex items-center justify-center relative">
+<!-- Abstract Floating Composition -->
+<div class="relative w-96 h-96">
+<!-- Background Rotated Frames -->
+<div class="absolute inset-0 border-[1px] border-gray-700 transform rotate-12 opacity-40"></div>
+<div class="absolute inset-0 border-[1px] border-gray-600 transform -rotate-12 opacity-30"></div>
+<!-- Main Focus Element -->
+<div class="absolute top-10 left-10 right-10 bottom-10 bg-gray-900 border border-[#00f3ff] shadow-[0_0_30px_rgba(0,243,255,0.15)] flex flex-col items-center justify-center z-10">
+<!-- Icon Cluster -->
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-gray-800 rounded">
+<i class="fa-solid fa-cube text-[#00f3ff] text-xl"></i>
+</div>
+<div class="w-12 h-12 flex items-center justify-center bg-gray-800 rounded">
+<i class="fa-solid fa-wand-magic-sparkles text-[#ff00ff] text-xl"></i>
+</div>
+<div class="w-12 h-12 flex items-center justify-center bg-gray-800 rounded">
+<i class="fa-solid fa-gamepad text-white text-xl"></i>
+</div>
+<div class="w-12 h-12 flex items-center justify-center bg-gray-800 rounded">
+<i class="fa-solid fa-pen-nib text-gray-400 text-xl"></i>
+</div>
+</div>
+<p class="font-['Space_Grotesk'] text-xs tracking-widest text-gray-500 mt-2">MEDIA &amp; ENTERTAINMENT</p>
+</div>
+<!-- Floating Accent -->
+<div class="absolute -bottom-6 -right-6 w-28 h-28 bg-[#ff00ff] flex items-center justify-center shadow-[0_0_20px_rgba(255,0,255,0.4)] z-20">
+<i class="fa-solid fa-play text-white text-3xl"></i>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-2 -right-2 w-4 h-4 bg-[#00f3ff]"></div>
+<div class="absolute -bottom-2 -left-2 w-4 h-4 border border-white"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Color Strip -->
+<div class="absolute bottom-0 left-0 w-full h-1.5 flex">
+<div class="w-2/3 bg-[#00f3ff] shadow-[0_0_10px_#00f3ff]"></div>
+<div class="w-1/3 bg-[#ff00ff] shadow-[0_0_10px_#ff00ff]"></div>
+</div>
+</div>
+</body>
+</html>
